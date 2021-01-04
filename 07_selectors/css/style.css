@@ -1,0 +1,27 @@
+ section {
+ 	color: white;
+ }
+
+ div {
+ 	color: red;
+ }
+
+ .second {
+ 	color: purple;
+ }
+
+ #section2 {
+ 	color: brown;
+ }
+
+ footer div {
+ 	color: green;
+ }
+
+ nav, h2 {
+ 	color: grey;
+ }
+
+ main .firstsection {
+ 	background: blue;
+ }
