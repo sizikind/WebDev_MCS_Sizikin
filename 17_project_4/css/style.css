@@ -1,0 +1,53 @@
+@import url(reset.css);
+/* шрифт для текста*/
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital@0;1&display=swap');
+/* шрифт для заголовков и ссылок*/
+@import url('https://fonts.googleapis.com/css2?family=Literata:wght@500&display=swap');
+
+h1, h2, a {
+	font-family: 'Literata', serif;
+	font-size: 38pt;
+	color: white;
+}
+
+p {
+	font-family: 'Bitter', serif;
+	font-size: 20pt;
+}
+
+.header_container {
+	width: 1440px;
+	height: 200px;
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,99,1) 37%, rgba(0,212,255,1) 87%);
+}
+
+.title {
+	font-size: 50pt;
+	line-height: 200px;
+}
+
+.image1 {
+	background-image: url(../img/landing_pic.png);
+	width: 1440px;
+	height: 1080px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.navigation {
+	width: 1440px;
+	height: 100px;
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,99,1) 37%, rgba(0,212,255,1) 87%);
+}
+
+a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 22pt;
+	line-height: 100px;
+	color: white;
+}
+
+.content {
+	
+}
