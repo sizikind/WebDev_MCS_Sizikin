@@ -1,0 +1,20 @@
+@import url(reset.css);
+
+.main {
+	height: 400px;
+	background-color: black;
+	color: white;
+}
+
+.main.second {
+	line-height: 1.5;
+	font-weight: 600;
+	font-size: 30pt;
+	font-family: sans-serif;
+}
+
+.first + li {
+	color: green;
+}
+
+.first ~ li {font-size: 40pt;}
