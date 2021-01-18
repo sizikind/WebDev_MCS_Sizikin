@@ -1,0 +1,82 @@
+@import url(reset.css);
+
+.page {
+	width: 1440px;
+	height: 1024px;
+	margin: auto;
+	font-family: Helvetica;
+	font-style: normal;
+	line-height: 23px;
+	position: relative;
+}
+
+.main {
+	font-size: 0;
+} /*to delete gaps between blocks with content*/
+
+.header, .footer {
+	height: 60px;
+	background-color: #FE1A19;
+}
+
+.header_title {
+	width: 820px;
+	height: 20px;
+	padding: 20px;
+	color: white;
+	font-style: normal;
+	font-weight: bold;
+}
+
+.chief_block {
+	margin: 52px 70px;
+}
+
+.block1, .block2, .block3 {
+	width: 400px;
+	height: 800px;
+	border: 5px solid #E5E000;
+	box-sizing: border-box;
+	border-radius: 30px;
+	position: relative;
+	display: inline-block;;
+}
+
+.block2 {
+	margin: 0 50px;
+}
+
+h2 {
+	font-size: 20px;
+	font-weight: bold;
+	margin: 33px 33px 41px;
+}
+
+.block.content1,.content2,.content3 {
+	margin: 0 33px 33px;
+}
+
+p {
+	font-size: 20px;
+	font-family: Times New Roman;
+	font-weight: normal;
+	/*margin-block-end: 1.1em;*/
+	margin-bottom: 24px;
+}
+
+.footer {
+	width: 1440px;
+	height: 60px;
+	font-size: 20px;
+	position: absolute;
+	bottom: 0;
+}
+
+.footer_copy {
+	width: 170px;
+	height: 20px;
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 20px;
+}
