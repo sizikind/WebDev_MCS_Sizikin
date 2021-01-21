@@ -1,64 +1,71 @@
-@import url(reset.css);
+/*@import url(reset.css); */
 
 /** {outline: 2px solid red}*/
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style: none;
+	font: inherit;
+	box-sizing: border-box;
+	}
+
+html {font-size: 20px;}
 
 .page {
 	font-family: Helvetica;
 	font-style: normal;
-	line-height: 23px;
+	line-height: 1.15rem;
 	position: relative;
 }
 
-.main {	font-size: 0} 
-/*to delete gaps between blocks with content*/
+.main {	
+	font-size: 0; /*to delete gaps between blocks with content*/
+	padding: 2.6rem 0;
+	text-align: center;
+}	
 
 .header, .footer {
-	height: 60px;
+	height: 3rem;
 	background-color: #FE1A19;
 }
 
 .header_title {
-	padding: 20px;
+	padding: 1rem;
 	color: white;
 	font-style: normal;
 	font-weight: bold;
 }
 
-.chief_block {
-	margin: 52px 0;
-	text-align: center;
-}
-
-.chief_block > div {
-	width: 400px;
-	border: 5px solid #E5E000;
+.main > div {
+	width: 20rem;
+	border: 0.25rem solid #E5E000;
 	box-sizing: border-box;
-	border-radius: 30px;
-	padding: 33px;
+	border-radius: 1.5rem;
+	padding: 1.65rem;
 	display: inline-block;
 	text-align: left;
 }
 
-.block1 > div {margin-top: 25px}
-.block2 > div {margin-top: 25px}
-.block3 > div {margin-top: 25px}
+.block_container > div {margin-top: 1.25rem}
 
-.block2, .block3 {margin-left: 50px}
+.block_container.second,.third {margin-left: 2.5rem}
 
 h2 {
-	font-size: 20px;
+	font-size: 1rem;
 	font-weight: bold;
 }
 
 h3 {
 	color: black;
-	font-size: 20px;
+	font-size: 1rem;
 	font-family: Times New Roman;
 	text-transform: uppercase;
 }
 
 ul {
-	font-size: 20px;
+	font-size: 1rem;
 	font-family: Times New Roman;
 	font-weight: normal;
 	/*margin-block-end: 1.1em;*/
@@ -67,7 +74,7 @@ ul {
 .footer_copy {
 	color: white;
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 1rem;
 	text-transform: uppercase;
-	padding: 20px;
+	padding: 1rem;
 }
