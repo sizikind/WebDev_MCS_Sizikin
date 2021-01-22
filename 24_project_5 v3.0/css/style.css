@@ -9,72 +9,80 @@
 	list-style: none;
 	font: inherit;
 	box-sizing: border-box;
-	}
+}
 
-html {font-size: 20px;}
+html {font-size: 62.5%;}
+
+:root {
+	--basic-f-size: 2rem;
+	--title-font: 'Helvetica', sans-serif;
+	--body-font: 'Times New Roman', serif;
+	--back-color: #fe1a19;
+}
 
 .page {
-	font-family: Helvetica;
 	font-style: normal;
-	line-height: 1.15rem;
+	line-height: 2rem;
 	position: relative;
 }
 
 .main {	
 	font-size: 0; /*to delete gaps between blocks with content*/
-	padding: 2.6rem 0;
+	padding: 5.2rem 0;
 	text-align: center;
 }	
 
 .header, .footer {
-	height: 3rem;
-	background-color: #FE1A19;
+	height: 6rem;
+	background-color: var(--back-color);
 }
 
 .header_title {
-	padding: 1rem;
+	line-height: 6rem;
+	padding-left: 2rem;
 	color: white;
+	font-size: var(--basic-f-size);
+	font-family: var(--title-font);
 	font-style: normal;
 	font-weight: bold;
 }
 
 .main > div {
-	width: 20rem;
-	border: 0.25rem solid #E5E000;
+	width: 40rem;
+	border: 0.5rem solid #E5E000;
 	box-sizing: border-box;
-	border-radius: 1.5rem;
-	padding: 1.65rem;
+	border-radius: 3rem;
+	padding: 3.3rem;
 	display: inline-block;
 	text-align: left;
 }
 
-.block_container > div {margin-top: 1.25rem}
+.block_container > h3 {margin-top: 2.5rem}
 
-.block_container.second,.third {margin-left: 2.5rem}
+.second,.third {margin-left: 5rem}
 
 h2 {
-	font-size: 1rem;
+	font-size: var(--basic-f-size);
+	font-family: var(--title-font);
 	font-weight: bold;
+}
+
+h3, ul {
+	font-family: var(--body-font);
+	font-size: var(--basic-f-size);
 }
 
 h3 {
 	color: black;
-	font-size: 1rem;
-	font-family: Times New Roman;
 	text-transform: uppercase;
-}
-
-ul {
-	font-size: 1rem;
-	font-family: Times New Roman;
-	font-weight: normal;
-	/*margin-block-end: 1.1em;*/
 }
 
 .footer_copy {
 	color: white;
 	font-weight: bold;
-	font-size: 1rem;
+	font-size: var(--basic-f-size);
+	font-family: var(--title-font);
 	text-transform: uppercase;
-	padding: 1rem;
+	line-height: 6rem;
+	padding-left: 2rem;
 }
