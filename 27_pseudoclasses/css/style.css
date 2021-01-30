@@ -1,0 +1,38 @@
+@import url(reset.css);
+
+.button {
+	height: 100px;
+	width: 200px;
+	background-color: orange;
+	box-sizing: border-box;
+	padding: 20px;
+	line-height: 60px;
+	text-align: center;
+	font-size: 30px;
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: black;
+	font-weight: bold;
+}
+
+a:link {
+	background-color: blue;
+}
+
+a:visited {
+	color: grey;
+}
+
+.button:hover {
+	background-color: yellow;
+}
+
+.button:active {
+	border-radius: 50%;
+	border: 2px solid red;
+	box-shadow: 0 0 15px orange;
+}
