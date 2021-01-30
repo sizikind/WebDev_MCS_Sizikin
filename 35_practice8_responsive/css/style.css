@@ -1,0 +1,65 @@
+@import url(reset.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Didact+Gothic&display=swap');
+
+html {font-size: 62.5%}
+
+:root {
+	--bg-color:#FFE138;
+	--title-font: 'Balsamiq+Sans';
+    --text-font:'Didact+Gothic';
+};
+
+body {
+	text-decoration: none;
+	/*font-family: var(--text-font); почему не наследуется?*/
+}
+
+header,footer {
+	height: 16rem;
+	background-color: #b5d9f7;
+	box-sizing: border-box;
+	padding: 5rem 0;
+	text-align: center;
+	line-height: 6rem;
+	font-size: 5rem;
+	text-transform: uppercase;
+	font-family: var(--title-font);
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	align-content: center;
+	box-sizing: border-box;
+	padding: 7rem;
+}
+
+.item {
+	min-width: 25rem;
+	border: 1px solid black;
+	width: calc((100% - 10rem)/3);
+	font-size: 2rem;
+	font-family: var(--text-font);
+}
+
+.item-img {
+	background-size: cover;
+	background-position: center;
+	padding-bottom: 100%;
+}
+
+.first {background-image: url(../img/taos.jpg)}
+.second {background-image: url(../img/outland.jpg)}
+.third {background-image: url(../img/tucson.jpg)}
+
+.item-text {margin: 3rem 3.2rem}
+
+h2 {
+	font-weight: bold;
+	margin-bottom: 2rem;
+}
+
+p {margin-bottom: 1.5rem}

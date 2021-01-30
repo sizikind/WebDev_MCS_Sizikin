@@ -1,0 +1,46 @@
+@import url(reset.css);
+
+.page {
+	width: 85%;
+	margin: auto;
+}
+
+header {
+	height: 10vh;
+	background-color: #ec7ceb;
+}
+
+main {
+	height: 90vh;
+	display: flex;
+}
+
+aside {
+	width: 280px;
+	background-color: green;
+}
+
+section {
+	width: calc(100% - 280px);
+	min-width: 300px;
+	background-color: navy;
+}
+
+footer {
+	height: 10vh;
+	background-color: #43be14;
+}
+
+.columns {
+	min-height: 20vh;
+	box-sizing: border-box;
+	padding: 2vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.column1 {
+	background-color: red;
+	width: calc((100% - 60px)/3);
+}

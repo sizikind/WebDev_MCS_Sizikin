@@ -1,0 +1,28 @@
+@import url(reset.css);
+
+.outer {
+	height: 300px;
+	width: 80%;
+	box-sizing: border-box;
+	background-color: black;
+	padding: 75px 0;
+	margin: auto;
+}
+
+.inner {
+	box-sizing: border-box;
+	height: 150px;
+	width: 50%;
+	margin: auto;
+	background-color: yellow;
+}
+
+.popup {
+	position: fixed;
+	width: 500px;
+	height: 300px;
+	border: 2px solid red;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}

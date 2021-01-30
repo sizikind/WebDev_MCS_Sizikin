@@ -1,0 +1,25 @@
+@import url(reset.css);
+
+.columns {
+	width: 85%;
+	margin: auto;
+	min-height: 10vh;
+	background-color: lightblue;
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+.column {
+	width: calc((100% - 30px)/3);
+	box-sizing: border-box;
+	background-color: lightgrey;
+	padding: 10px;
+}
+
+.image {
+	background-image: url(../img/audi.jpg);
+	background-size: cover;
+	background-position: center;
+	padding-bottom: 100%;
+}
