@@ -1,0 +1,30 @@
+@import url(reset.css);
+
+body {
+	display: flex;
+	justify-content: center;
+}
+
+div {
+	width: 300px;
+	height: 300px;
+	background-color: orange;
+	margin: 20px;
+	transition-duration: 1s;
+}
+
+.translate:hover { /*смещение по x и y*/
+	transform: translate(5px, 100px);
+}
+
+.rotate:hover { /*вращение вокруг своего центра*/
+	transform: rotate(180deg);
+}
+
+.skew:hover { /*наклон по x и y, два значения в deg*/
+	transform: skew(10deg, 180deg);
+}
+
+.scale:hover { /*масштаб по x и y, где 1 = 100%*/
+	transform: scale(1.2, 1.2);
+}

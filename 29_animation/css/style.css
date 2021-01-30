@@ -1,0 +1,55 @@
+/*https://redstapler.co/10-simple-cool-css-animation примеры анимаций*/
+
+@import url(reset.css);
+
+@keyframes bounce {
+	0% {
+		top: 0;
+		left: 0;
+	}
+
+	25% {
+		top: 100px;
+		left: 100%;
+		background-color: red;
+	}
+
+	50% {
+		top: 200px;
+		left: 0;
+	}
+
+	75% {
+		top: 300px;
+		left: 100%;
+		background-color: blue;
+	}
+
+	100% {
+		top: 400px;
+		left: 0;
+	}
+}
+
+body {
+	background-color: black;
+}
+
+.ball {
+	width: 200px;
+	height: 200px;
+	background-color: #40b3ae;
+	border-radius: 50%;
+	position: relative;
+	animation-name: bounce;
+	animation-duration: 4s;
+	animation-timing-function: ease-in;
+	animation-delay: 1s;
+	animation-iteration-count: infinite;
+	/*infinite - Анимация повторяется бесконечно.
+	<число> - Сколько раз должна повторяться анимация.*/ 
+	animation-direction: alternate;
+	animation-play-state: running;
+	/*running - Проигрывать анимацию.
+	paused - Поставить анимацию на паузу.*/
+}
