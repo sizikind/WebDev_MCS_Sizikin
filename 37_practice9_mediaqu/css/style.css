@@ -1,0 +1,68 @@
+@import url(reset.css);
+
+* {
+	font-family: 'Helvetica', sans-serif;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	height: 100%;
+}
+
+body {
+	min-width: 25rem;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+header,footer {
+	height: 10rem;
+	background: linear-gradient(90deg, rgba(36,117,185,1) 0%, rgba(161,245,241,1) 100%, rgba(255,255,255,1) 100%);
+	padding: 3.5rem 3rem;
+	font-size: 3rem;
+	color: white;
+}
+
+footer {margin-top: auto;}/*в связки с flex для body и column - прижимает футер к низу*/
+
+main {padding: 2rem}
+
+h3 {
+	border: 0.5rem solid black;
+	font-size: 2.5rem;
+	font-weight: bold;
+	text-align: center;
+	padding: 1.5rem;
+}
+
+.item {margin-top: 4.1rem}
+
+@media screen and (min-width: 668px) {
+
+	main {
+		height: 100%;
+		padding: 5rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.row {
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	#box {
+		width: calc((100% - 2rem)/2);
+		min-width: 30rem;
+		font-size: 4rem;
+		margin-top: 0;
+		padding: 4rem 4rem;
+	}
+
+	.second {margin-top: 2rem}
+}
