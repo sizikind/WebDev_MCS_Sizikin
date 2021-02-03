@@ -1,0 +1,70 @@
+@import url(reset.css);
+
+html {font-size: 62.5%}
+
+form {
+	font-family: 'arial', sans-serif;
+	width: 80%;
+	margin: 0 auto;
+	font-size: 1.5rem;
+	line-height: 2.8rem;
+}
+
+input, label, textarea {
+	display: block;
+	width: 100%;
+}
+
+input {
+	height: 2rem;
+	border: 1px solid black;
+	color: lightgrey;
+}
+
+textarea {height: 10rem}
+
+input[type="radio"], input[type="checkbox"] {
+	display: inline-block;
+	width: 7%;
+}
+
+legend {
+	font-weight: bold;
+	font-size: 1.8rem;
+}
+
+.margin {
+	box-sizing: border-box;
+	padding-top: 1rem;
+}
+
+input[type="submit"] {
+	background-color: black;
+	height: 7rem;
+	color: white;
+	font-size: 2rem;
+	margin-top: 1rem;
+}
+
+input[type="submit"]:hover {
+	background-color: white;
+	color: black;
+	transform: scale(1.03, 1.03);
+	transition-duration: 1s;
+}
+
+@media screen and (min-width: 600px) {
+	html, body, .wrapper {height: 100%}
+
+	form {
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.margin {padding-top: 0}
+
+	.column {
+		width: 48%;
+	}
+}

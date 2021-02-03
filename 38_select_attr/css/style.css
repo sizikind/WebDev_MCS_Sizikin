@@ -1,0 +1,11 @@
+@import url(reset.css);
+
+img[alt="beauty"] {
+	width: 100%;
+	aspect-ratio:2 / 1;
+}
+
+img[src="https://vistapointe.net/images/north-pole-8.jpg"] {
+	width: 100vw;
+	aspect-ratio:2 / 1;
+}

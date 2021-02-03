@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Boilerplate</title>
+	<meta charset="utf-8">
+	<meta description="">
+	<meta keywords="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div>
+		<form>
+			<fieldset class="personal">
+				<!-- Текстовое окно для ФИО -->
+				<label for="fio">ФИО</label>
+				<input type="text" name="fio" placeholder="Иван Иванов">
+				<!-- Окно для ввода e-mail -->
+				<label for="email">E-mail</label>
+				<input type="email" name="email" placeholder="yo@example.ru">
+				<!-- Окно для ввода пароля -->
+				<label for="password">Пароль</label>
+				<input type="password" name="password">
+				<!-- Окно с форматом даты -->
+				<label for="birth">Дата Рождения</label>
+				<input type="date" name="birth">				
+			</fieldset>
+			<fieldset class="type">
+				<!-- Фикс варианты ответа на вопрос -->
+				<label for="client">Были ли Вы у нас прежде?</label>
+				<input type="radio" name="client" value="yes" checked="true"><span>Да</span>
+				<input type="radio" name="client" value="no"><span>Нет</span>
+				<!-- Всплывающий список доступных вариантов -->
+				<label for="purpose">Как Вы о нас узнал?</label>
+				<select name="purpose">
+					<option value="social">Соц.сети</option>
+					<option value="friends">Друзья</option>
+				</select>
+			</fieldset>
+			<fieldset type="message">
+				<!-- Масштабируемое поле для ввода сообщения любого объема -->
+				<label for="message">Введите Ваше сообщение</label>
+				<textarea name="message">Текст сообщения</textarea>
+				<!-- Галочка для подтверждения чего-либо -->
+				<input type="checkbox" checked="true"><span>Согласен(-на) с политикой</span>
+			</fieldset>
+			<!-- Кнопка Отправить -->
+			<input type="submit">
+		</form>
+	</div>
+</body>
+</html>
