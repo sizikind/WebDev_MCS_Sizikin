@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Project 10 - Forms</title>
+	<meta charset="utf-8">
+	<meta description="">
+	<meta keywords="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="services">
+			<h1>Посылки</h1>
+			<h1>Упаковка</h1>
+			<h1>Подписки</h1>
+		</div>
+		<h1 class="menu">Меню</h1>
+	</header>
+	<main>
+		<div class="hero-box">
+			<form action="https://formspree.io/f/xrgodkkw" method="POST">
+				<fieldset>
+					<label for="name">Ваше Имя</label>
+					<input type="text" name="name" placeholder="Ира">
+					<label for="city">Город проживания</label>
+					<input type="text" name="city" placeholder="Самара">
+					<label for="gift">Выберите подарок</label>
+					<select name="gift">
+						<option value="book">Книга в твердом переплёте</option>
+						<option value="headset">Наушники</option>
+						<option value="usb">Флешка с логотипом</option>
+					</select>
+					<label for="email">Введите e-mail</label>
+					<input type="email" name="email" placeholder="hello@mail.ru">
+				</fieldset>
+				<input type="submit">
+			</form>
+		</div>
+		<div class="bottom-box">
+			<h2>Ваша посылка уже в пути!</h2>
+		</div>
+	</main>
+	<footer>
+		<div class="about"><h2>Секретные посылки для друзей</h2></div>
+		<div class="copyright"><h2>© 2021</h2></div>
+	</footer>
+</body>
+</html>

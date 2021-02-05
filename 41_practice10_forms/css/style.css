@@ -1,0 +1,122 @@
+@import url(reset.css);
+
+:root {
+	--color-bcg:#F8BFC7;
+	--font-main:'Helvetica', sans-serif;
+}
+
+html {
+	font-size: 62.5%;
+	height: 100%;
+}
+
+body {
+	width: 85%;
+	min-width: 59rem;
+	height: 100%;
+	margin: 0 auto;
+	font-family: var(--font-main);
+}
+
+header, footer {
+	height: 9rem;
+	background-color: var(--color-bcg);
+	line-height: 9rem;
+	font-weight: bold;
+	font-size: 2rem;
+	text-transform: uppercase;
+	box-sizing: border-box;
+	padding: 0 5rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.services {
+	display: flex;
+	column-gap: 3rem;
+}
+
+.hero-box {
+	width: 100%;
+	aspect-ratio: 2 / 1;
+	background-image: url(../img/back.png);
+	background-size: cover;
+	position: relative;
+}
+
+.bottom-box {
+	width: 100%;
+	height: 20vh;
+	box-sizing: border-box;
+	padding: 3rem 0 0 0;
+	background-color: #336FD1;
+	text-align: center;
+}
+
+.bottom-box h2 {
+	font-size: 4rem;
+	color: #FEB700;
+	text-transform: uppercase;
+}
+
+footer {color: white;}
+
+form {
+	position: absolute;
+	top: 15%;
+	left: 5%;
+	line-height: 4rem;
+	font-size: 1.5rem;
+}
+
+label, input, select {display: block}
+
+label {font-weight: bold}
+
+fieldset {
+	background: #F8BFC7;
+	border: 3px solid #FFFFFF;
+	box-sizing: border-box;
+	border-radius: 2rem;
+	padding: 2rem 3rem;
+	color: white;
+}
+
+input, select {
+	width: 100%;
+	border: none;
+	background: #F8BFC7;
+	border-bottom: 1px solid #FFFFFF;
+	font-size: 1.5rem;
+	color: white;
+	outline: none;
+}
+
+input::placeholder {color: white;}
+input:focus::placeholder {color: transparent;}
+
+option {
+	background: white;
+	color: black;
+}
+
+input[type="submit"] {
+	width: 60%;
+	margin: 1rem auto;
+	background: #FEB700;
+ 	border: 3px solid #FFFFFF;
+	box-sizing: border-box;
+	padding: 2rem 3rem;
+	border-radius: 30px;
+	color: white;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	transform: scale(1.1, 1.1);
+	background: linear-gradient(90deg, rgba(254,183,0,1) 0%, rgba(185,36,36,1) 100%);
+	transition: 1s;
+}
