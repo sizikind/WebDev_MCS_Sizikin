@@ -36,12 +36,17 @@ header, footer {
 	column-gap: 3rem;
 }
 
+main {
+	background-color: #336FD1;
+}
+
 .hero-box {
 	width: 100%;
 	aspect-ratio: 2 / 1;
+	padding-top: 2rem;
 	background-image: url(../img/back.png);
 	background-size: cover;
-	position: relative;
+	display: flex;
 }
 
 .bottom-box {
@@ -49,7 +54,6 @@ header, footer {
 	height: 20vh;
 	box-sizing: border-box;
 	padding: 3rem 0 0 0;
-	background-color: #336FD1;
 	text-align: center;
 }
 
@@ -62,9 +66,7 @@ header, footer {
 footer {color: white;}
 
 form {
-	position: absolute;
-	top: 15%;
-	left: 5%;
+	margin: auto 9rem;
 	line-height: 4rem;
 	font-size: 1.5rem;
 }
@@ -74,12 +76,16 @@ label, input, select {display: block}
 label {font-weight: bold}
 
 fieldset {
+	height: 36rem;
 	background: #F8BFC7;
 	border: 3px solid #FFFFFF;
 	box-sizing: border-box;
 	border-radius: 2rem;
 	padding: 2rem 3rem;
 	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 }
 
 input, select {
@@ -119,4 +125,10 @@ input[type="submit"]:hover {
 	transform: scale(1.1, 1.1);
 	background: linear-gradient(90deg, rgba(254,183,0,1) 0%, rgba(185,36,36,1) 100%);
 	transition: 1s;
+}
+
+@media (max-width: 1000px) {
+	form {
+		margin: auto;
+	}
 }
