@@ -1,0 +1,19 @@
+@import url(reset.css);
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.title, .result {
+	margin: 2rem 0;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+input[type="number"] {
+	width: 100px;
+}
+
+.total {text-decoration: underline;}
