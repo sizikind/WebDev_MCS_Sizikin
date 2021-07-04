@@ -9,16 +9,10 @@ let newSchool = [
   ]
 ]
 
-//первый способ
 for (let school of newSchool) {
 	for (let artists of school) {
-		console.log(artists);
-	}
-}
-
-//второй способ
-for (let i = 0; i < newSchool.length; i++) {
-	for (let j = 0; j < newSchool[i].length; j++) {
-		console.log(newSchool[i][j]);
+    artists.forEach(name => {
+      console.log(name);
+    })
 	}
 }
