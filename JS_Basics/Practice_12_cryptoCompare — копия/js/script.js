@@ -15,24 +15,35 @@ let crypto = [
 
 console.log(crypto);
 
-//Возьмем название крипты из массива объектов crypto:
-let nameArray = document.querySelectorAll('.crypto__name');
+//находим контейнер в разметке, который будем наполнять
+const container = document.querySelector('.items');
 
-nameArray.forEach(names =>{
-    for (let objects of crypto) {
-      for (titles in objects) {
-        if (typeof objects[titles] === "string") {
-          console.log(objects[titles]);
-          names.innerHTML = "<h2>" +objects[titles]+ "</h2>"
-        }
-      }
-    }
+//запускаем цикл по объектам внутри исходного массива
+crypto.forEach(currency => {
+ 
+  const cryptoName = document.createElement('h1');//создали контейнер для каждого имени крипты
+  const cryptoValue = document.createElement('h2');//создали контейнер для значений крипты
+  const valueScale = document.createElement('div');//cоздали контейнер под шкалу
+
+  //добавляем классы созданным блокам
+  cryptoName.classList.add('crypto-name');
+  cryptoValue.classList.add('crypto-value');
+  valueScale.classList.add('value-scale');
+
+  //присваиваем значения
+  cryptoName.textContent = currency.name;
+  cryptoValue.textContent = currency.price;
+  valueScale.style.width = currency.price+['px'];
+
+  //добавляем в html-разметку
+  container.append(cryptoName,cryptoValue,valueScale);
 })
 
+//создаем массив с разными цветами
+const colorsForScale = ['red', 'green', 'blue', 'navy', 'yellow', 'brown'];
+//выбираем контейнеры со шкалой
+const scaleArr = document.querySelector('.value-scale');
 
-//Возьмем стоимость крипты из массива crypto в html:
-let valueArray = document.querySelectorAll('.crypto__value');
-
-
-//Берем значения для ширины цветного блока:
-let diagramArray = document.querySelectorAll('.crypto__diagram');
+colorsForScale.forEach(color => {
+  scaleArr.style.backgroundColor = color;
+})
